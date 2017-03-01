@@ -40,6 +40,10 @@ namespace Cloudinary {
         public function identifier() {
             return "v" . $this->version . "/" . $this->filename;
         }
+
+        public function pmsFileName() {
+            return $this->filename;
+        }
         
         public function extended_identifier() {
             return $this->resource_type . "/" . $this->type . "/" . $this->identifier();
